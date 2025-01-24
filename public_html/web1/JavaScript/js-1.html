@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 1</title>
+
+</head>
+<body>
+    <h1>JavaScript Demo 1</h1>
+    <button id="loader" onclick="loadStuff()">Click Me!</button></button>
+    <main id="content"></main>
+    <!-- <audio src="sounds/suii-by-cristiano-ronaldo-123253.mp3" controls></audio>  -->
+
+    <script>
+        alert("Hello World");
+        console.log("Page loaded succesfully");
+        /**
+        * Variables
+        */
+        
+        // dynamic variable "let"
+
+        let myName = "Massimo";
+        
+        // a constant variable "const"
+        const pi = 3.14159265;
+
+        // Math operators + = / *
+        console. log("PI X 7 =" + pi *7);
+    
+        // Concatenate Strings (text data) 
+        // with other Strings or dynamic data with +
+        
+        /**
+         * F u n c t i o n s
+         */
+
+        function eatPizza() {
+            alert("Yummy 🍕");
+        }
+        eatPizza();
+
+        //New ES6 Function
+        let makePizza = () => {
+            console. log("adding ingridients... and bake 👨‍🍳")
+        };
+        
+        const myContainer = document.getElementById("content");
+            let myAudio = new Audio("sounds/suii-by-cristiano-ronaldo-123253.mp3")
+
+            function loadStuff() {
+            myAudio.play()
+        myContainer.innerHTML = '<p>Hello</p><img src="https://pbs.twimg.com/media/FmYhLabX0CEYEp1.jpg:large"/>';
+
+            
+        }
+
+
+    </script>
+</body>
+</html>

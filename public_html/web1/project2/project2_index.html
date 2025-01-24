@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3</title>
+    <link rel="stylesheet" href="styleproject2.css">
+</head>
+<body>
+    <h1>My Project 3!</h1>
+    <h3>My little soccer character is a representation of a SSC Napoli player(Di Lorenzo). I put my favourite number on him, even though he's number 22 in real life. I used figma to make this!</h3>
+    
+
+    <div id="panel">click here</div>
+    <img src="img/figma-sketch-project2-web1.svg" alt="my sketch">
+    <p><img src="img/sketch.png" alt="figma" width="400px"></p>
+    
+    <button id="btn" onclick="top.location.href = '../project3/project3.html'">play my game!</button>
+    
+    <br>
+
+    
+
+
+    <script>
+        const panel = document.getElementById("panel");
+        const sound = new Audio("sounds/door.mp3");
+        
+        panel.onclick = function() {
+            this.classList.toggle("slide-up");
+            sound.play();
+        }
+    </script>
+    
+    
+</body>
+</html>

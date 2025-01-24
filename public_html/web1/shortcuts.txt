@@ -1,0 +1,9 @@
+VS Code:
+Cmd + / = comment/uncomment
+Cmd + S = Save document
+Shift + Option + curser key down = duplicate lines
+
+Broswer:
+Cmd + Shift + R = Reload (full realod w. asset files)
+
+Cmd = CTRL on PC

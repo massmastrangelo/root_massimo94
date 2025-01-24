@@ -1,0 +1,19 @@
+/* Basic rest */
+*
+
+
+body {
+    background-color: olive
+}
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+h2 {
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+h3 {
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+}

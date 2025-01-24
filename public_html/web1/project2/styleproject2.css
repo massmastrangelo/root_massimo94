@@ -1,0 +1,59 @@
+* {
+    
+    box-sizing: border-box;
+}
+
+    body {
+        background-image: url(img/greengrassgood.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 35px;
+        
+    }
+    #panel {
+        width: 100%;
+        height: 100vh;
+        background-color: #12A0D7;  
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        align-content: center;
+        font-weight: bold;
+        transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+        transform-style: preserve-3d;
+    
+    }
+    .slide-up{
+        transform: translateY(-95vh); rotate: 180deg;
+    }
+    h1{
+        color: #12A0D7;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    h2{
+        color: black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    #btn {
+
+        background-color: red;
+        padding: 10px 70px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 12px 12px 20px #0000000c;
+        margin-bottom: 200px;
+        rotate: -12deg;
+        font-size: 2em;
+        cursor: pointer;
+        transition: all 0.2s linear;
+        bottom: 30px;
+        
+        }
+        #btn:hover {
+        background-color: pink;
+        rotate: 2deg;
+        }
+   
