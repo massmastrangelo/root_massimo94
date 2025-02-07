@@ -1,0 +1,19 @@
+
+
+#neres,
+#lukaku,
+#messi {
+    transition: transform 0.5s;
+}
+
+#neres:hover {
+    transform: rotate(45deg);
+}
+
+#lukaku:hover {
+    transform: scale(2);
+}
+
+.move-right {
+    transform: translateX(900px);
+}
