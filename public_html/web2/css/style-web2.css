@@ -1,4 +1,9 @@
 /* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+  }
 header {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -6,32 +11,40 @@ header {
     padding: 20px;
     
 }
+main {
+
+
 h2{
+    
     color: black;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     background-color: lightcyan;
     padding: 5px;
+   
     
 
     
 }
 p{
-    text-align: center;
-    
 
+    text-align: center;
 }
+    
 .background-col {
     background-color: azure;
     background-size: cover;
     background-position: center;
     height: 800px;
     padding: 20px;
+}
     
+}
+footer {
+    
+    text-align: center;
 }
 img {
     float: right
 }
-img {
-    float: left;
-}
+
