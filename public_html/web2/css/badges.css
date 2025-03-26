@@ -1,0 +1,56 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+  }
+  header {
+    text-align: center;
+    background-color: rgb(18, 160, 215)
+  }
+ 
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    grid-gap: 10px; 
+    padding: 10px;
+}
+
+/* Grid Items */
+.grid-item {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+}
+/* transitions css */
+
+a:link{
+    transition: color 0.5s;
+}
+
+img{
+    opacity: 0.25;
+    transition: opacity 500ms;
+}
+
+img:hover{
+    opacity: 1;
+}
+footer {
+    text-align: center;
+    background-color: rgb(18, 160, 215)
+    
+}
+footer nav {
+    text-align: left;
+}

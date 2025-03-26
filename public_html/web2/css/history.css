@@ -1,0 +1,44 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+  }
+  header {
+    background-color: rgb(18, 160, 215);
+    text-align: center;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    grid-gap: 10px; 
+    padding: 10px;
+}
+
+/* Grid Items */
+.grid-item {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.grid-item img {
+    width: 100%;   /* Ensure images fit within the container */
+    height: auto;  /* Maintain aspect ratio */
+    transition: filter 0.3s ease; /* Smooth transition for filter */
+}
+
+/* Hover effect: grayscale to color */
+.grid-item:hover img {
+    filter: grayscale(100%); /* Turn image to black-and-white */
+    transform: scale(0.5);
+}
+footer {
+    background-color: rgb(18, 160, 215);
+    text-align: center;
+}
+footer nav {
+    text-align: left;
+}

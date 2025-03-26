@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSC Napoli Fan Page</title>
+    <link rel="stylesheet" href="css/test1.css">
+    <style>
+        /* Basic Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 10px;
+        }
+
+        header {
+            background-color: rgb(18, 160, 215);
+            text-align: center;
+        }
+
+        /* Grid Layout */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+            grid-gap: 15px; /* Adds space between items */
+            padding: 10px;
+        }
+
+        /* Grid Items */
+        .grid-item {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover Effect for Grid Item */
+        .grid-item:hover {
+            background-color: #0078d4; /* Light blue on hover */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        }
+
+        /* Image Styling */
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            opacity: 0.8; /* Start with slightly faded image */
+        }
+
+        /* Hover effect: scale and make the image fully visible */
+        .grid-item:hover img {
+            transform: scale(1.05);
+            opacity: 1; /* Make image fully visible */
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 10px; /* Space above heading */
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: rgb(18, 160, 215);
+            text-align: center;
+        }
+
+        footer nav {
+            text-align: left;
+        }
+
+        footer nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to SSC Napoli Fan Page</h1>
+    </header>
+    <main>
+        <section class="grid-container">
+            <div class="grid-item">
+                <img src="img/conte.jpg" alt="conte">
+                <h3>This is Napoli's current manager, Antonio Conte. He's leading Napoli to success in his first season!</h3>
+            </div>
+            <div class="grid-item">
+                <img src="img/spaletti.jpg" alt="spaletti">
+                <h3>Luciano Spalletti was the coach who led Napoli to a league title in the 2022-23 season!</h3>
+            </div>
+            <div class="grid-item">
+                <img src="img/gattuso.avif" alt="gattuso">
+                <h3>Gennaro Gattuso helped Napoli win the Coppa Italia in the 2019-2020 season. He's currently coaching in France.</h3>
+            </div>
+        </section>
+
+        <section class="grid-container">
+            <div class="grid-item">
+                <img src="img2/meret.jpg" alt="meret">
+                <h3>GK - Alex Meret</h3>
+            </div>
+            <div class="grid-item">
+                <img src="img2/dilorenzo.jpg" alt="dilorenzo">
+                <h3>RB - Captain - Giovanni Di Lorenzo</h3>
+            </div>
+            <div class="grid-item">
+                <img src="img2/rrhamani.webp" alt="rrhamani">
+                <h3>CB - Amir Rrhamani</h3>
+            </div>
+            <div class="grid-item">
+                <img src="img2/buongiorno.jpg" alt="buongiorno">
+                <h3>CB - Alessandro Buongiorno</h3>
+            </div>
+            <div class="grid-item">
+                <img src="img2/spina.jpg" alt="spina">
+                <h3>LB - Leonardo Spinazzola</h3>
+            </div>
+            <div class="grid-item">
+                <img src="img2/anguissa.jpg" alt="anguissa">
+                <h3>CDM - Frank-Zambo Anguissa</h3>
+            </div>
+            <div class="grid-item">
+                <img src="img2/lobotka.jpg" alt="lobotka">
+                <h3>CDM - Stanislav Lobotka</h3>
+            </div>
+            <div class="grid-item">
+                <img src="img2/scott.jpg" alt="scott">
+                <h3>CM - Scott McTominay</h3>
+            </div>
+            <div class="grid-item">
+                <img src="img2/neres.jpg" alt="neres">
+                <h3>LW - David Neres</h3>
+            </div>
+            <div class="grid-item">
+                <img src="img2/politano.jpg" alt="politano">
+                <h3>RW - Matteo Politano</h3>
+            </div>
+            <div class="grid-item">
+                <img src="img2/lukaku2.jpeg" alt="lukaku">
+                <h3>ST - Romelu Lukaku</h3>
+            </div>
+        </section>
+
+        <section class="grid-container">
+            <div class="grid-item">
+                <img src="img2/juvemerda.jpg" alt="juvemerda">
+                <h2>SSC Napoli VS. Juventus</h2>
+                <h3>Napoli's biggest rivals, with a heated history of fierce clashes.</h3>
+            </div>
+            <div class="grid-item">
+                <img src="img2/inter.jpg" alt="intermerda">
+                <h2>SSC Napoli VS. Inter Milan</h2>
+                <h3>Intense battles with Inter for league titles and glory!</h3>
+            </div>
+            <div class="grid-item">
+                <img src="img2/salernitana.jpg" alt="salernitana">
+                <h2>SSC Napoli VS. Salernitana</h2>
+                <h3>Napoli's neighbors and automatic rivals in every match!</h3>
+            </div>
+        </section>
+
+        <section class="grid-container">
+            <div class="grid-item">
+                <img src="img2/europeleague.webp" alt="europa">
+                <h3>First European Trophy - Europa League (1989-1990)</h3>
+            </div>
+            <div class="grid-item">
+                <img src="img2/coppaitalia19.jpg" alt="coppaitalia">
+                <h3>Most Recent Coppa Italia Win (2019-2020)</h3>
+            </div>
+            <div class="grid-item">
+                <img src="img2/scudetto2223.jpg" alt="scudetto">
+                <h3>Recent Serie A Scudetto Win (2022-2023)</h3>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav><a href="index.html">Back to Home</a></nav>
+        <p>Copyright © by Massimo 2025</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,105 @@
+
+        /* Basic Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 10px;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: rgb(18, 160, 215);
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            color: white;
+        }
+
+        /* Grid Layout */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+            grid-gap: 15px;
+            padding: 10px;
+        }
+
+        /* Grid Items */
+        .grid-item {
+            background-color: #1E3A8A; /* Dark Blue */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+
+        /* Hover Effect for Grid Item */
+        .grid-item:hover {
+            background-color: #0078d4; /* Light blue on hover */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        }
+
+        /* Image Styling */
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            opacity: 0.8; /* Start with slightly faded image */
+        }
+
+        /* Hover effect: scale and make the image fully visible */
+        .grid-item:hover img {
+            transform: scale(1.05);
+            opacity: 1; /* Make image fully visible */
+        }
+
+        h2, h3 {
+            text-align: center;
+            margin-top: 10px; /* Space above headings */
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: rgb(18, 160, 215);
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+        footer nav {
+            text-align: left;
+        }
+
+        footer nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        footer p {
+            margin-top: 10px;
+            color: white;
+        }
+
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+            .grid-item {
+                font-size: 14px; /* Smaller font size for mobile */
+            }
+
+            header h1 {
+                font-size: 1.8rem; /* Smaller header font on mobile */
+            }
+
+            footer p {
+                font-size: 0.9rem; /* Smaller footer text for mobile */
+            }
+        }
+   
+ 

@@ -1,0 +1,102 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+  }
+  header {
+    background-color: rgb(18, 160, 215);
+    text-align: center;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 10px; 
+    padding: 10px;
+    width: 100%;  
+}
+
+
+.grid-item {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+
+.grid-link {
+    text-decoration: none;  
+    color: white;           
+    font-size: 18px;
+    display: block;         
+    padding: 10px;
+    background-color: #3e8e41; 
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease; 
+}
+/* Add fade-in effect for grid items */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the fade-in animation to grid items */
+.grid-item {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    opacity: 0; /* Start hidden */
+    animation: fadeIn 0.6s ease-out forwards; /* Apply animation */
+}
+
+/* Optional: add animation delay for each item */
+.grid-item:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.grid-item:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.grid-item:nth-child(3) {
+    animation-delay: 0.6s;
+}
+.grid-item:nth-child(4) {
+    animation-delay: 0.8s;
+}
+.grid-item:nth-child(5) {
+    animation-delay: 1s;
+}
+.grid-item:nth-child(6) {
+    animation-delay: 1.2s;
+}
+
+.grid-link:hover {
+    background-color: #45a049; 
+}
+
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+}
+footer {
+    text-align: center;
+    background-color: rgb(18, 160, 215)
+    
+}
+footer nav {
+    text-align: left;
+}

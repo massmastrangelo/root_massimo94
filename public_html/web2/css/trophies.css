@@ -1,0 +1,42 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+  }
+  header {
+    background-color: rgb(18, 160, 215);
+    text-align: center;
+  }
+  /* Grid Items */
+.grid-item {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+h2 {
+  text-align: center;
+}
+.grid-item img {
+    width: 100%;   /* Ensure images fit within the container */
+    height: auto;  /* Maintain aspect ratio */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+    opacity: 0.8;  /* Start with slightly faded image */
+}
+
+/* Hover effect: scale and make the image fully visible */
+.grid-item:hover img {
+    transform: scale(1.05); /* Slightly zoom in on hover */
+    opacity: 1;             /* Make image fully visible */
+}
+footer{
+    background-color: rgb(18, 160, 215);
+    text-align: center;
+  }
+  footer nav{
+    text-align: left;
+    
+  }

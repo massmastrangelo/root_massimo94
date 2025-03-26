@@ -1,5 +1,29 @@
 /* Basic Reset */
-h1{
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+  }
+header {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    -webkit-text-fill-color: rgb(18, 160, 215);
+    -webkit-text-stroke: darkblue;
+    background-color: rgb(46, 43, 43)
+    
+}
+header div {
+    text-align: left;
+    
+}
+header nav {
+    text-align: center;
+}
+nav{
+    text-align: center;
+    background-color: rgb(18, 160, 215);
+    
+}
+a {
+    -webkit-text-fill-color: black;
 }
