@@ -24,6 +24,13 @@ nav{
     background-color: rgb(18, 160, 215);
     
 }
+
+
+
+.grid-item:hover img {
+    filter: grayscale(100%); /* Turn image to black-and-white */
+    width: 100%;
+}
 a {
     -webkit-text-fill-color: black;
 }

@@ -25,7 +25,7 @@
     font-size: 18px;
 }
 .grid-item img {
-    width: 100%;   /* Ensure images fit within the container */
+    width: 50%;   /* Ensure images fit within the container */
     height: auto;  /* Maintain aspect ratio */
     transition: filter 0.3s ease; /* Smooth transition for filter */
 }
@@ -33,7 +33,7 @@
 /* Hover effect: grayscale to color */
 .grid-item:hover img {
     filter: grayscale(100%); /* Turn image to black-and-white */
-    transform: scale(0.5);
+    transform: scale(1.15);
 }
 footer {
     background-color: rgb(18, 160, 215);
